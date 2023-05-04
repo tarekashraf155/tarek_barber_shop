@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+ <style>          
+ body{
+    background-color: whitesmoke;
+   }
+    .div1{
+        background-color:black;
+        box-shadow: 10cm;
+    }
+    .buttonall{border: none;
+            background-color:  silver; 
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bolder;
+            
+        }  .link1{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <table style="width: 28cm;">      
+            <tr>
+                <td >
+                    <img src="portrait-mid-adult-bearded-male-barber-with-folded-arms.jpg" width="150" height="150" style="border-radius: 50%;">
+                </td>
+                <td style="font-size: 50px; color:white; font-weight: bolder; font-style: italic;" class="head1">
+                    Menu
+                </td>
+            </tr>
+            </table>
+            </div>
+            <div style="background-color: silver";>
+                <table style="width: 15cm;">
+                    <tr>
+                        <td>     <div class="buttonall"><a href="tareek home.html" class="link1">Home</a></div></td>
+                        <td>
+                            <div class="buttonall"><a href="menu.html" class="link1">Menu</a></div></td>
+                        </td>
+                        <td>
+                            <div class="buttonall"><a href="about.html" class="link1">About</a></div></td>
+                        </td> <td>
+                            <div class="buttonall"><a href="contact us.html" class="link1">Contact</a></div></td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="background-image:url(studio-portrait-redhead-bearded-male-dressed-jacket-grey-background_613910-1319.jpg); background-size: cover;">
+                <table style="width: 20cm;"> 
+                    <h2 style="font-size: 50px; color:whitesmoke; font-weight: bolder;">Available hair cut:</h2>     
+                    <tr>
+                        <td ><br>
+                            <img src="80-155124-15-men-s-attractive-look-with-long-hair_700x400.jpeg" width="150" height="150" style="border-radius: 50%;">
+                        </td>
+                        <td style="font-size: 40px; color:whitesmoke; font-weight: bolder; font-style: italic;" class="head1">
+                         120 pound
+                        </td>
+                    </tr>
+                    <br>
+                    <br>
+                    <tr>
+                        <td ><br>
+                            <img src="images.jpg" width="150" height="150" style="border-radius: 50%;">
+                        </td>
+                        <td style="font-size: 40px; color:whitesmoke; font-weight: bolder; font-style: italic;" class="head1">
+                            150 pound
+                        </td>
+                    </tr>
+                    <br><br>
+                    <tr>
+                        <td ><br>
+                            <img src="1830196-1368107721.jpg" width="150" height="150" style="border-radius: 50%;">
+                        </td>
+                        <td style="font-size: 40px; color:whitesmoke; font-weight: bolder; font-style: italic;" class="head1">
+                            160pound
+                        </td>
+                    </tr>
+                    <br><br>
+                    <tr>
+                        <td ><br>
+                            <img src="images (1).jpg" width="150" height="150" style="border-radius: 50%;">
+                        </td>
+                        <td style="font-size: 40px; color:whitesmoke; font-weight: bolder; font-style: italic;" class="head1">
+                            100pound
+                        </td>
+                    </tr><br><br>
+                    </table>
+            </div>
+            <script>
+                let myname="Menu";
+                let index=0;
+                function writetext(){ 
+              document.querySelector(".head1").textContent= myname.slice(0,index);
+             
+              index++
+            if(index>1000000){
+                index=0
+            }
+          
+                }
+              setInterval(function(){
+                writetext();
+              },500
+          
+              )
+              
+            
+             
+            </script>
+    
+</body>
+</html>

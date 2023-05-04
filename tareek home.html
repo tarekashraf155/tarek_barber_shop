@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barber shop</title>
+    <style>
+                body{
+        background-color: whitesmoke;
+       }
+        .div1{
+            background-color:black;
+            box-shadow: 10cm;
+        }
+        .buttonall{border: none;
+            background-color:  silver; 
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bolder;
+            
+        } 
+        .link1{
+            text-decoration: none;
+            color: black;
+        }
+        .p1{
+            font-size: 30px;
+         color:white;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <table style="width: 43cm;">      
+            <tr>
+                <td >
+                    <img src="portrait-mid-adult-bearded-male-barber-with-folded-arms.jpg" width="150" height="150" style="border-radius: 50%;">
+                </td>
+                <td style="font-size: 50px; color:white; font-weight: bolder; font-style: italic;" class="head1">
+                    Tarik barber shop 
+                </td>
+            </tr>
+            </table>
+            </div>
+            <br>
+            <div style="background-color: silver";>
+                <table style="width: 15cm;">
+                    <tr>
+                        <td>     <div class="buttonall"><a href="tareek home.html" class="link1">Home</a></div></td>
+                        <td>
+                            <div class="buttonall"><a href="menu.html" class="link1">Menu</a></div></td>
+                        </td>
+                        <td>
+                            <div class="buttonall"><a href="about.html" class="link1">About</a></div></td>
+                        </td> <td>
+                            <div class="buttonall"><a href="contact us.html" class="link1">Contact</a></div></td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+
+            
+            <div style="background-image:url(vintage-paper-with-beard-shaping-salon-tools.jpg); background-size: cover;"> 
+                <h1 style="font-size: 40px; font-style: italic; font-weight: bolder;color:brown;;"> Hair cut:</h1>
+                <p class="p1">Certainly, every man has a favorite</p>
+                <p class="p1">hairstyle for his hair that completes the</p>
+                <p class="p1">elegance and consistency of his external appearance,</p>
+                <p class="p1">and men's barbershops are of special importance to men, not</p>
+                <p class="p1">only related to the skill of their workers, but alsoto the amount of </p>
+                <p class="p1">psychological comfort that men feel inside the place</p>
+                <br><br>
+                <h1 style="font-size: 40px; font-style: italic; font-weight: bolder;color:brown;;"> else:</h1>
+                <p class="p1">The more men feel psychologically comfortable inside the</p>
+                <p class="p1">barbershop, the more they become attached to it.Therefore,</p>
+                <p class="p1"> if you miss your barbershop because you are outside </p>
+                <p class="p1">your country, or you want to embark on a new</p>
+                <p class="p1">  adventure in a new barbershop</p>
+    
+            </div>
+            <script>
+                let myname="Tarik barber shop";
+                let index=0;
+                function writetext(){ 
+              document.querySelector(".head1").textContent= myname.slice(0,index);
+             
+              index++
+            if(index>1000000){
+                index=0
+            }
+          
+                }
+              setInterval(function(){
+                writetext();
+              },500
+          
+              )
+              
+            
+             
+            </script>
+    
+</body>
+</html>
